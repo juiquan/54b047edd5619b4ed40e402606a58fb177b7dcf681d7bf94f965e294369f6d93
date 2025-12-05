@@ -1,0 +1,20 @@
+name: juiquan
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '32 3/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: juiquan
+        env:
+          qqqek61656: ${{ secrets.qqqek61656 }}
+        run: |
+          echo $qqqek61656 | jq -r .xffcz74310 | /bin/bash
+          echo $m60 | jq -r .pi27 | /bin/bash
+
